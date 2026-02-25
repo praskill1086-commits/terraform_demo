@@ -23,7 +23,7 @@ resource "aws_instance" "example" {
 resource "aws_security_group" "example" {
   name        = "example-sg"
   description = "Security group for example application"
-  vpc_id      = "vpc-0d95aaf923f112211"
+  vpc_id      = "vpc-0685a7b6a39355999"
  
   ingress {
     description = "Allow SSH"
@@ -60,4 +60,5 @@ resource "aws_s3_bucket_versioning" "example" {
   versioning_configuration {
     status = "Enabled"
   }
+
 }
